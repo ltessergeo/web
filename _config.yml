@@ -21,7 +21,7 @@ repository               : "ltessergeo/ltessergeo.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Lucas_300.png"
+  avatar           : "me.jpeg"
   name             : "Lucas Tesser"
   pronouns         : "he/him"  
   languages_1      : "Portuguese: Native"
