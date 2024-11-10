@@ -14,7 +14,7 @@
   <body>
     <h1>Pyscript: Code for Converting Whole Rock Analysis</h1>
 
-    <!-- Input fields for user-defined values -->
+    <!-- Input fields for Fe3prop, watermol, and apt values -->
     <label for="Fe3prop">Fe3prop:</label>
     <input type="number" id="Fe3prop" value="0.1" step="0.01"><br><br>
 
@@ -24,9 +24,32 @@
     <label for="apt">Apt (yes or no):</label>
     <input type="text" id="apt" value="yes"><br><br>
 
+    <!-- Editable table for dataset values -->
+    <h3>Editable Dataset Table</h3>
+    <table border="1">
+      <tr>
+        <th>Oxide</th>
+        <th>Value</th>
+      </tr>
+      <tr><td>SiO2</td><td><input type="number" id="SiO2" value="60.41" step="0.01"></td></tr>
+      <tr><td>TiO2</td><td><input type="number" id="TiO2" value="0.93" step="0.01"></td></tr>
+      <tr><td>Al2O3</td><td><input type="number" id="Al2O3" value="20.1" step="0.01"></td></tr>
+      <tr><td>Fe2O3</td><td><input type="number" id="Fe2O3" value="0" step="0.01"></td></tr>
+      <tr><td>FeO</td><td><input type="number" id="FeO" value="5.68" step="0.01"></td></tr>
+      <tr><td>MnO</td><td><input type="number" id="MnO" value="0.08" step="0.01"></td></tr>
+      <tr><td>MgO</td><td><input type="number" id="MgO" value="2.3" step="0.01"></td></tr>
+      <tr><td>CaO</td><td><input type="number" id="CaO" value="1.06" step="0.01"></td></tr>
+      <tr><td>Na2O</td><td><input type="number" id="Na2O" value="1.53" step="0.01"></td></tr>
+      <tr><td>K2O</td><td><input type="number" id="K2O" value="4.17" step="0.01"></td></tr>
+      <tr><td>P2O5</td><td><input type="number" id="P2O5" value="0.15" step="0.01"></td></tr>
+      <tr><td>H2O</td><td><input type="number" id="H2O" value="0" step="0.01"></td></tr>
+    </table>
+    <br>
+
     <!-- Button to run the analysis -->
     <button id="runScript">Run Analysis</button>
-    
+
+    <!-- Output area -->
     <pre id="output"></pre>
 
     <py-script>
@@ -40,10 +63,14 @@
             watermol = float(Element("watermol").value)
             apt = Element("apt").value.lower()
 
-            sample = "DLT01"
+            # Get values from editable table to form the dataset DataFrame
             dataset = pd.DataFrame({
-                'SiO2': [60.41], 'TiO2': [0.93], 'Al2O3': [20.1], 'Fe2O3': [0], 'FeO': [5.68],
-                'MnO': [0.08], 'MgO': [2.3], 'CaO': [1.06], 'Na2O': [1.53], 'K2O': [4.17], 'P2O5': [0.15], 'H2O': [0]
+                'SiO2': [float(Element("SiO2").value)], 'TiO2': [float(Element("TiO2").value)],
+                'Al2O3': [float(Element("Al2O3").value)], 'Fe2O3': [float(Element("Fe2O3").value)],
+                'FeO': [float(Element("FeO").value)], 'MnO': [float(Element("MnO").value)],
+                'MgO': [float(Element("MgO").value)], 'CaO': [float(Element("CaO").value)],
+                'Na2O': [float(Element("Na2O").value)], 'K2O': [float(Element("K2O").value)],
+                'P2O5': [float(Element("P2O5").value)], 'H2O': [float(Element("H2O").value)]
             })
 
             Moloxide = pd.DataFrame({
