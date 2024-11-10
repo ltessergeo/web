@@ -2,7 +2,7 @@
 title: "Pan-African granitic magmatism of the Kaoko Belt: Tectonic perspective from its South American connection and insights into the crustal architecture of SW Gondwana"
 collection: publications
 permalink: /publications/hueck2024_namibia
-date: 2024-03-27 01:00:00 +0500
+date: 2024-01-27 01:00:00 +0500
 venue: 'Precambrian Research'
 doi: 'https://doi.org/10.1016/j.precamres.2024.107366'
 pubtype: 'journal'
