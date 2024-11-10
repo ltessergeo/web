@@ -25,15 +25,16 @@
     <input type="text" id="apt" value="yes"><br><br>
 
     <!-- Button to run the analysis -->
-    <py-button label="Run Analysis" id="runScript" output="output" onclick="run_analysis()">Run Analysis</py-button>
+    <button id="runScript">Run Analysis</button>
     
     <pre id="output"></pre>
 
     <py-script>
         import pandas as pd
+        from pyscript import Element
 
         # Function to run the analysis using input values
-        def run_analysis():
+        def run_analysis(event=None):
             # Get values from input fields
             Fe3prop = float(Element("Fe3prop").value)
             watermol = float(Element("watermol").value)
@@ -87,8 +88,11 @@
                 f"0   {ds62} O(?)    * {sample} Fe3/Fe2 = {Fe3prop} | H2O= {watermol} [ds62]\n"
                 f"0   {ds55} O(?)    * {sample} Fe3/Fe2 = {Fe3prop} | H2O= {watermol} [ds55]"
             )
-            print(result)
 
+            Element("output").write(result)
+
+        # Bind the button click to the run_analysis function
+        Element("runScript").element.onclick = run_analysis
     </py-script>
   </body>
 </html>
