@@ -21,10 +21,12 @@ Below you'll find a simple Python script for a convenient conversion of x-ray fl
 [![Codecov test coverage](https://codecov.io/gh/ShanaScogin/BayesPostEst/branch/master/graph/badge.svg)](https://codecov.io/gh/ShanaScogin/BayesPostEst?branch=master)
 
 
-
-
-
-
+<script type="module" src="https://pyscript.net/releases/2023.12.1/core.js"></script>
+<script type="py">
+    print("Hello, world")
+    for i in range(10):
+        print(i)  
+</script>
 
 
 {% include gallery %}
