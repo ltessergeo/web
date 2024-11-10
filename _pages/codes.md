@@ -21,7 +21,8 @@ Below you'll find a simple Python script for a convenient conversion of x-ray fl
 [![Codecov test coverage](https://codecov.io/gh/ShanaScogin/BayesPostEst/branch/master/graph/badge.svg)](https://codecov.io/gh/ShanaScogin/BayesPostEst?branch=master)
 
 
-[Code](javascript:window.open('pywr.html','popup','width=800,height=600');)
+[Code](pywr.html){:target="_blank"}
+
 
 {% include gallery %}
 
