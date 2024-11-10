@@ -13,9 +13,9 @@ I hold a B.S. from Federal Rural University of Rio de Janeiro (2018) and an M.S.
 My master's dissertation can be found [here](https://www.teses.usp.br/teses/disponiveis/44/44143/tde-07062021-083043/en.php){:target="_blank"}.
 
 In 2021 I received the FAPESP Scholarship to pursue my PhD.
-Currently, I am doing an internship at University of Lausanne under supervision of [Pierre Lanari](https://scholar.google.com/citations?user=WmXpZO4AAAAJ&hl=pt-PT&oi=ao){:target="_blank"}; 
+Currently, I am doing an internship at University of Lausanne under supervision of professor [Pierre Lanari](https://scholar.google.com/citations?user=WmXpZO4AAAAJ&hl=pt-PT&oi=ao){:target="_blank"}.
 
-Our current research interests include major and trace element geospeedometry in garnet, barrovian metamorphism, and petrochronology.
+Our current research interests include major and trace element geospeedometry in garnet, barrovian metamorphism, and metamorphic timescales.
 
 ## My Study Area
 
