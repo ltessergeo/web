@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 
-    <!-- Include the Pandas -->    
+    <!-- Include Pandas -->
     <py-config>
       packages = ["pandas"]
     </py-config>
@@ -24,15 +24,21 @@
     <label for="apt">Apt (yes or no):</label>
     <input type="text" id="apt" value="yes"><br><br>
 
-    <button id="runScript" onclick="runPython()">Run Analysis</button>
+    <!-- Button to run the analysis -->
+    <py-button label="Run Analysis" id="runScript" output="output" onclick="run_analysis()">Run Analysis</py-button>
     
     <pre id="output"></pre>
 
-    <py-script output="output">
+    <py-script>
         import pandas as pd
 
         # Function to run the analysis using input values
-        def run_analysis(Fe3prop, watermol, apt):
+        def run_analysis():
+            # Get values from input fields
+            Fe3prop = float(Element("Fe3prop").value)
+            watermol = float(Element("watermol").value)
+            apt = Element("apt").value.lower()
+
             sample = "DLT01"
             dataset = pd.DataFrame({
                 'SiO2': [60.41], 'TiO2': [0.93], 'Al2O3': [20.1], 'Fe2O3': [0], 'FeO': [5.68],
@@ -50,7 +56,7 @@
             Fecorr['Fe2O3'] = Fe3prop * (oxidepp['Fe2O3'] + 0.5 * oxidepp['FeO'])
 
             Aptcorr = Fecorr.copy()
-            if apt.lower() == "yes":
+            if apt == "yes":
                 Aptcorr['CaO'] -= 10 / 3 * Fecorr['P2O5']
 
             Aptcorr = Aptcorr.drop(columns=['P2O5', 'H2O'])
@@ -82,13 +88,6 @@
                 f"0   {ds55} O(?)    * {sample} Fe3/Fe2 = {Fe3prop} | H2O= {watermol} [ds55]"
             )
             print(result)
-
-        # Get values from input fields
-        def runPython():
-            Fe3prop = float(document.getElementById('Fe3prop').value)
-            watermol = float(document.getElementById('watermol').value)
-            apt = document.getElementById('apt').value
-            run_analysis(Fe3prop, watermol, apt)
 
     </py-script>
   </body>
