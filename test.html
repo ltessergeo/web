@@ -3,21 +3,18 @@
   <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
-      <title>Code test</title>
+      <title>🦜 Polyglot - Piratical PyScript</title>
       <script type="module" src="https://pyscript.net/releases/2023.12.1/core.js"></script>
       <py-env>
-        <script type="module" src="https://pyscript.net/releases/2023.12.1/pyodide.js"></script>
-        <script type="module" src="https://pyscript.net/releases/2023.12.1/pyodide.js"></script>
-        </py-env>
-    </head>
-    <body>
-      <h1>Code test</h1>
-      <p>Test</p>
-      <script type="module">
-        import { pyodide } from 'https://pyscript.net/releases/2023.12.1/pyodide.js';
-        pyodide.runPython(`
-          print("Hello from Python")
-        `);
-      </script>
-    </body>
+        - pandas
+      </py-env>
+  </head>
+  <body>
+    <script type="text/py-script">
+      import pandas as pd
+      df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
+      print(df)
+    </script>
+    
+  </body>
 </html>
