@@ -13,4 +13,4 @@ Lucas Tesser is an earth scientist. After working in the analytical research lab
 
 Currently I'm studing...
 
-![Skirmish-Level Tactics via Game-Theoretic Analysis](/images/Lucas_300.png)
+![Skirmish-Level Tactics via Game-Theoretic Analysis](images/Lucas_300.png)
