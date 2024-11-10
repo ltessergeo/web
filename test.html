@@ -30,7 +30,7 @@
         print("Please input values and press 'Calculate' to get results.")
     </py-script>
     
-    <py-script>
+    <script>
         function updateValues() {
             // Get values from input fields
             const fe3prop = document.getElementById('fe3prop').value;
@@ -39,7 +39,8 @@
 
             // Generate dynamic Python code with updated values
             const code = `
-import pandas as pd
+<py-script>
+            import pandas as pd
 
 sample = "DLT01"
 dataset = pd.DataFrame({
@@ -102,5 +103,6 @@ print(f"0   {ds55} O(?)    * {sample} Fe3/Fe2 = {Fe3prop} | H2O= {watermol} [ds5
             document.getElementById('output-script').textContent = code;
         }
     </py-script>
+</script>
 </body>
 </html>
