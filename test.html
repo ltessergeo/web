@@ -36,7 +36,7 @@
 
     <label for="apt">Do you want to correct for presence of apatite? (yes or no):</label>
     <input type="radio" id="apt_yes" name="apt" value="yes" checked>
-    <label for="apt">Yes</label>
+    <label for="apt_yes">Yes</label>
     <input type="radio" id="apt_no" name="apt" value="no">
     <label for="apt_no">No</label><br><br>
 
@@ -103,7 +103,7 @@
             Fecorr['Fe2O3'] = Fe3prop * (oxidepp['Fe2O3'] + 0.5 * oxidepp['FeO'])
 
             Aptcorr = Fecorr.copy()
-            if apt == "yes":
+            if apt_yes == "yes":
                 Aptcorr['CaO'] -= 10 / 3 * Fecorr['P2O5']
 
             Aptcorr = Aptcorr.drop(columns=['P2O5', 'H2O'])
