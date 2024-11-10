@@ -13,8 +13,9 @@
         /* Style for highlighting the output */
         #output {
           font-weight: bold;
-          color: darkblue;
-          background-color: #f0f8ff;
+          font-size: medium;
+          color: rgb(255, 255, 255);
+          background-color: #000000;
           padding: 14px;
           border-radius: 5px;
         }
@@ -22,16 +23,16 @@
   </head>
 
   <body>
-    <h1>PyWR_Theriak: A python script to convert wholo rock analysis to input file in THERIAK-DOMINO</h1>
+    <h1>PyWR_Theriak: A python script to convert whole rock analysis to input file in THERIAK-DOMINO</h1>
 
     <!-- Input fields for Sample, Fe3prop, watermol, and apt values -->
     <label for="sample">Sample Name:</label>
     <input type="text" id="sample" value="newsample"><br><br>
 
-    <label for="Fe3prop">Fe3prop:</label>
+    <label for="Fe3prop">Fe3+/Fe2+:</label>
     <input type="number" id="Fe3prop" value="0.1" step="0.01"><br><br>
 
-    <label for="watermol">H2O content wt%:</label>
+    <label for="watermol">H2O content (mol%):</label>
     <input type="number" id="watermol" value="10" step="1"><br><br>
 
     <label for="apt">Do you want to correct for presence of apatite? (yes or no):</label>
@@ -55,7 +56,7 @@
       <tr><td>Na2O</td><td><input type="number" id="Na2O" value="1.53" step="0.10"></td></tr>
       <tr><td>K2O</td><td><input type="number" id="K2O" value="4.17" step="0.10"></td></tr>
       <tr><td>P2O5</td><td><input type="number" id="P2O5" value="0.15" step="0.10"></td></tr>
-      <tr><td>H2O</td><td><input type="number" id="H2O" value="0" step="0.10"></td></tr>
+     <!-- <tr><td>H2O</td><td><input type="number" id="H2O" value="0" step="0.10"></td></tr> -->
     </table>
     <br>
 
