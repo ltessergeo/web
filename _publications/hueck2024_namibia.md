@@ -1,0 +1,15 @@
+---
+title: "Pan-African granitic magmatism of the Kaoko Belt: Tectonic perspective from its South American connection and insights into the crustal architecture of SW Gondwana"
+collection: publications
+permalink: /publications/hueck2024_namibia
+date: 2024-03-27 01:00:00 +0500
+venue: 'Precambrian Research'
+doi: 'https://doi.org/10.1016/j.precamres.2024.107366'
+pubtype: 'journal'
+authors: 'Hueck, M., Basei, M. A., Frimmel, H., Lino, L. M., Corrêa, V. X., Tesser, L. R., and Ganade, C. E.'
+excerpt_separator: ""
+---
+The Kaoko Belt in northwestern Namibia formed during the assembly of Gondwana in the Neoproterozoic to Cambrian Pan-African orogenic cycle. The belt has a complex tectonic architecture, in which a variety of basement units and metasedimentary associations became juxtaposed along shear zones and experienced widespread intrusive magmatism, generally confined to its western domain. We present a large new dataset of whole-rock geochemical and isotope data, as well as U-Pb zircon ages, encompassing a wide variety of granitoids and subordinate basic rocks across the Kaoko Belt. This is complemented by whole-rock isotope analyses from various basement and metasedimentary units and by a compilation of data from the literature. The new dataset strengthens previous models that correlate the granitoids in the Kaoko Belt to the coeval Florianópolis Batholith in the South American Dom Feliciano Belt, which we use to shed new light on the tectonic organization and evolution of the Pan-African orogenic cycle in the Neoproterozoic. The similarities in the compositional range of granitoids from both sub-domains of the Western Kaoko Belt, namely the Orogen Core and the Coastal Terrane, suggest that the entire zone comprises a heterogeneous but comparable and consistently diverse association of rocks. The comparison to South America underscores that, while the granitoids have “crust-like” isotopic signatures, these are in sharp contrast with those of the mostly Archean to Paleoproterozoic basement rocks of both the Kaoko and Dom Felicano belts. This suggests that the magmatic sources of the intrusive magmatism of the Kaoko Belt are likely a mixture of autochthonous crustal melting with an important mantle-derived input at some point after the Paleoproterozoic. This input was probably driven by accretionary orogeny and/or rifting that took place in the Tonian, Ediacaran, or both. The presence of more juvenile associations in the western domain of the Kaoko Belt may indicate an isotopic boundary within the belt that mirrors the tectonic configuration of the Dom Feliciano Belt in South America. This isotopic border, which would correspond to the Puros Shear Zone, could have acted as a terrane boundary from the earliest stages of the tectonic evolution of the Kaoko Belt.
+
+
+DOI: [10.1016/j.precamres.2024.107366](https://doi.org/10.1016/j.precamres.2024.107366)
