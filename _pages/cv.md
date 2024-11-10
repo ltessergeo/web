@@ -11,54 +11,45 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Mineralogy and Petrology, University of São Paulo, 2026 (expected)
+  * ~20% developed at University of Lausanne 
+* M.S. in Mineralogy and Petrology, University of São Paulo, 2021
+* B.S. in Geology, Federal Rural University of Rio de Janeiro, 2018
 
-Work experience
+Scholarships
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2021 - 2026: PhD
+  * University of São Paulo
+  * Founded by FAPESP
+  * Supervisor: Professor Miguel Basei
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2024 - 2025: PhD internship
+  * University of Lausanne
+  * Founded by FAPESP
+  * Supervisor: Professor Pierre Lanari
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2019 - 2021: MSc
+  * University of São Paulo
+  * Founded by CAPES
+  * Supervisor: Professor Miguel Basei
+
+* 2014 - 2015: Scientific initiation
+  * Federal University of Rio de Janeiro
+  * Founded by COOPETEC
+  * Supervisor: Professor Sergio de Castro Valente
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Metamorphic petrology
+* Techinical writing
+* Scientific software programing
+  * Julia (5/10)
+  * R (8/10)
+  * Python (3/10)
+  * MatLab (7/10)
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
