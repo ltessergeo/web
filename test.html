@@ -1,25 +1,55 @@
-<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>PyScript!</title>
-        <link
-            rel="stylesheet"
-            href="https://pyscript.net/snapshots/2024.9.2/core.css"
-        />
-        <script
-            type="module"
-            src="https://pyscript.net/snapshots/2024.9.2/core.js"
-        ></script>
-        <py-env> 
-            - pandas
-        </py-env>
-    </head>
-    <body>
-        <!-- Use MicroPython to evaluate some Python -->
-        <script type="mpy" terminal>
-            print("Hello, world!")
-        </script>
-    </body>
+  <head>
+    <title>Pyscript CSV to Plot</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+       
+    <!-- Include the Pandas and Matplotlib packages -->    
+    <py-config>
+      packages = [ "pandas", "matplotlib" ]    
+    </py-config>
+ 
+  </head>
+  <body>
+       
+    <h1>Pyscript: Input Local CSV File and Create a Bar Chart</h1>
+       
+    <label for="myfile">Select a CSV file to graph:</label>
+    <input type="file" id="myfile" name="myfile" accept=".csv"><br>
+ 
+    <div id="lineplot"> </div>
+    <pre id="print_output"> </pre>
+    <py-script output="print_output">
+import pandas as pd
+import matplotlib.pyplot as plt
+from io import StringIO
+import asyncio
+from js import document, FileReader
+from pyodide.ffi.wrappers import add_event_listener
+ 
+# Process a new user selected CSV file      
+async def process_file(event):      
+    fileList = event.target.files.to_py()
+    for f in fileList:
+        data = await f.text()
+        # the CSV file is read as large string 
+        # use StringIO to pass info into Panda dataframe
+        csvdata = StringIO(data)
+        df = pd.DataFrame(pd.read_csv(csvdata, sep=","))
+        print("DataFrame of:", f.name, "\n",df)
+ 
+        fig, ax = plt.subplots(figsize=(16,4))
+        plt.bar(df.iloc[:,0], df.iloc[:,1])
+        plt.title(f.name)
+        plt.ylabel(df.columns[1])
+        plt.xlabel(df.columns[0])
+        # Write Mathplot figure to div tag
+        pyscript.write('lineplot',fig)
+          
+# Set the listener to look for a file name change
+e = document.getElementById("myfile")
+add_event_listener(e, "change", process_file)   
+ 
+</py-script>
+</body>
 </html>
