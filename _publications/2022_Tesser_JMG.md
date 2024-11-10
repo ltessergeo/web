@@ -1,7 +1,7 @@
 ---
 title: "Ultrahigh‐temperature Palaeoproterozoic rocks in the Neoproterozoic Borborema Province, implications for São Francisco Craton dispersion in NE Brazil"
 collection: publications
-permalink: /publications/ganade2023_geology
+permalink: /publications/2022_Tesser_JMG
 date: 2022-11-20 01:00:00 +0500
 venue: 'Journal of Metamorphic Geology'
 doi: 'https://onlinelibrary.wiley.com/doi/10.1111/jmg.12632'
