@@ -15,7 +15,7 @@
           font-weight: bold;
           color: darkblue;
           background-color: #f0f8ff;
-          padding: 10px;
+          padding: 14px;
           border-radius: 5px;
         }
       </style>
@@ -35,10 +35,7 @@
     <input type="number" id="watermol" value="10" step="1"><br><br>
 
     <label for="apt">Do you want to correct for presence of apatite? (yes or no):</label>
-    <input type="radio" id="apt_yes" name="apt" value="yes" checked>
-    <label for="apt_yes">Yes</label>
-    <input type="radio" id="apt_no" name="apt" value="no">
-    <label for="apt_no">No</label><br><br>
+    <input type="text" id="apt" value="yes"><br><br>
 
     <!-- Editable table for dataset values -->
     <h3>Input your composition</h3>
@@ -103,7 +100,7 @@
             Fecorr['Fe2O3'] = Fe3prop * (oxidepp['Fe2O3'] + 0.5 * oxidepp['FeO'])
 
             Aptcorr = Fecorr.copy()
-            if apt_yes == "yes":
+            if apt == "yes":
                 Aptcorr['CaO'] -= 10 / 3 * Fecorr['P2O5']
 
             Aptcorr = Aptcorr.drop(columns=['P2O5', 'H2O'])
