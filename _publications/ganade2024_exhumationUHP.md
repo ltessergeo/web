@@ -1,15 +1,15 @@
 ---
-title: "Competitive Perimeter Defense with a Turret and Mobile Vehicle"
+title: "Exhumation of ultra-high pressure (UHP) rocks modulated by rifted margin-subduction feedback: Implications for their preservation in old collisional orogens"
 collection: publications
 permalink: /publications/ganade2024_exhumationUHP
-date: 2023-02-27 01:00:00 +0500
-venue: 'Frontiers in Control Engineering'
-doi: '10.3389/fcteg.2023.1128597'
+date: 2024-02-27 01:00:00 +0500
+venue: 'Earth and Planetary Science Letters'
+doi: 'https://doi.org/10.1016/j.epsl.2024.118893'
 pubtype: 'journal'
-authors: 'S. Bajaj, S. D. Bopardikar, A. Von Moll, E. Torng, D. W. Casbeer'
+authors: 'Ganade, C., Riel, N., Manatschal, G., Tesser, L., Hermann, J., Rubatto, D., Weinberg, R., Lanari, P., and Kaus, B.'
 excerpt_separator: ""
 ---
-We consider perimeter defense problem in a planar conical environment with two cooperative heterogeneous defenders, i.e., a turret and a mobile vehicle, that seek to defend a concentric perimeter against mobile intruders. Arbitrary numbers of intruders are released at the circumference of the environment at arbitrary time instants and locations. Upon release, they move radially inwards with fixed speed towards the perimeter. The defenders are heterogeneous in terms of their motion and capture capabilities. Specifically, the turret has a finite engagement range and can only turn (clockwise or anti-clockwise) in the environment with fixed angular rate whereas, the vehicle has a finite capture radius and can move in any direction with unit speed. We present a competitive analysis approach to this perimeter defense problem by measuring the performance of multiple cooperative online algorithms for the defenders against arbitrary inputs, relative to an optimal offline algorithm that has information about the entire input sequence in advance. Specifically, we establish necessary conditions on the parameter space to guarantee finite competitiveness of any online algorithm. We then design and analyze four cooperative online algorithms and characterize parameter regimes in which they have finite competitive ratios. In particular, our first two algorithms are 1-competitive in specific parameter regimes, our third algorithm exhibits different competitive ratios in different regimes of problem parameters, and our fourth algorithm is 1.5-competitive in specific parameter regimes. Finally, we provide multiple numerical plots in the parameter space to reveal additional insights into the relative performance of our algorithms.
+In continental subduction, rifted margins can be carried to mantle depths (> 90 km) where ultra-high pressure (UHP) metamorphism above coesite stability is attained. Although different exhumation mechanisms for UHP rocks have been discussed, none of them integrate the recent understanding of rifted continental margins. Here, we perform high-resolution thermomechanical numerical experiments to demonstrate that segments of magma-poor rifted margins that reach UHP conditions can efficiently exhume back to shallower levels, while segments of magma-rich rifted margins cannot. This is because the thick layer of rocks with a basaltic composition in magma-rich margins becomes negatively buoyant during metamorphism, preventing their exhumation. This new concept might be pivotal for explaining why exhumed UHP rocks, a key feature of modern-style continental orogens, only appeared and became common late in Earth's history. We suggest that higher mantle potential temperatures and fertility in Earth's early history favored magma-rich rifted margins, making exhumation of UHP crust inefficient. Conditions for magma-poor rifted margins may have arisen during Earth's middle age (1.5–0.8 Ga) due to a colder, more refractory mantle that limited melting and magmatism. We argue that at the end of Neoproterozoic, these colder and positively buoyant magma-poor rifted margins were then subducted and efficiently exhumed to form the large collisional orogens of Gondwana where Earth's oldest coesite-bearing UHP rocks have been unequivocally found. Since then, UHP rocks have become a key and ubiquitous feature of continental orogens.
 
 
-DOI: [10.3389/fcteg.2023.1128597](https://doi.org/10.3389/fcteg.2023.1128597)
+DOI: [10.1016/j.epsl.2024.118893](https://doi.org/10.1016/j.epsl.2024.118893)

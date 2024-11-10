@@ -7,12 +7,12 @@ author_profile: true
 
 [Journal Articles](#journal-articles)\
 [Conference Papers](#conference-papers)\
-[White Papers](#white-papers)\
-[Academic](#academic)\
+<!--[White Papers](#white-papers)\-->
+<!--[Academic](#academic)\-->
 [Presentations](#presentations)
 
 {% if site.author.googlescholar %}
-  You can also find my articles on <u><a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</u>
+You can also find my articles on <u><a href="{{site.author.googlescholar}}" target="_blank">my Google Scholar profile</a>.</u>
 {% endif %}
 
 {% include base_path %}
@@ -32,20 +32,20 @@ author_profile: true
   {% endif %}
 {% endfor %}
 
-## White Papers
+<!-- ## White Papers
 {% for post in site.publications reversed %}
-  {% if post.pubtype == 'whitepaper' %}
-      {% include archive-single.html %}
-  {% endif %}
-{% endfor %}
+    {% if post.pubtype == 'whitepaper' %}
+            {% include archive-single.html %}
+    {% endif %}
+{% endfor %} -->
 
 
-## Academic
+<!-- ## Academic
 {% for post in site.publications reversed %}
-  {% if post.pubtype == 'academic' %}
-      {% include archive-single.html %}
-  {% endif %}
-{% endfor %}
+    {% if post.pubtype == 'academic' %}
+            {% include archive-single.html %}
+    {% endif %}
+{% endfor %} -->
 
 ## Presentations
 {% for post in site.publications reversed %}
