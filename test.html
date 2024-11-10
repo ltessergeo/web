@@ -35,7 +35,10 @@
     <input type="number" id="watermol" value="10" step="1"><br><br>
 
     <label for="apt">Do you want to correct for presence of apatite? (yes or no):</label>
-    <input type="text" id="apt" value="yes"><br><br>
+    <input type="radio" id="apt_yes" name="apt" value="yes" checked>
+    <label for="apt_yes">Yes</label>
+    <input type="radio" id="apt_no" name="apt" value="no">
+    <label for="apt_no">No</label><br><br>
 
     <!-- Editable table for dataset values -->
     <h3>Input your composition</h3>
