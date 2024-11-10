@@ -121,12 +121,12 @@
             })
 
             CationsF3 = pd.DataFrame({
-                'SI':TC['SiO2'], 'TI':TC['TiO2'], 'AL': TC['Al2O3'] * 2, 'FE': TC['FeO'], 'F3': TC['O2'] * 2, 'MN': TC['MnO'],
+                'SI': TC['SiO2'], 'TI': TC['TiO2'], 'AL': TC['Al2O3'] * 2, 'FE': TC['FeO'], 'F3': TC['O2'] * 2, 'MN': TC['MnO'],
                 'MG': TC['MgO'], 'CA': TC['CaO'], 'NA': TC['Na2O'], 'K': TC['K2O'] * 2, 'H': [watermol * 2]
             })
 
-            ds62 = " ".join([f"{col}({CationsO2[col].iloc[0]:.3f})" for col in CationsO2.columns])
-            ds55 = " ".join([f"{col}({CationsF3[col].iloc[0]:.3f})" for col in CationsF3.columns])
+            ds62 = "".join([f"{col}({CationsO2[col].iloc[0]:.3f})" for col in CationsO2.columns])
+            ds55 = "".join([f"{col}({CationsF3[col].iloc[0]:.3f})" for col in CationsF3.columns])
 
             result = (
                 f"0   {ds62}O(?)    * {sample} Fe3/Fe2 = {Fe3prop} | H2O= {watermol} [ds62]\n"
