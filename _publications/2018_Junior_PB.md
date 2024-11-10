@@ -4,7 +4,7 @@ collection: publications
 permalink: /publications/2018_Junior_PB
 date: 2018-11-20 01:00:00 +0500
 venue: 'Geosciences = Geociências'
-doi: 'https://doi.org/10.5016/geociencias.v37i2.12235'{:target="_blank"}
+doi: 'https://doi.org/10.5016/geociencias.v37i2.12235'
 pubtype: 'journal'
 authors: 'Porto Jr, R., Tesser, L. R., and Duarte, B. P.'
 excerpt_separator: ""
