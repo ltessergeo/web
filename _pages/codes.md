@@ -18,7 +18,7 @@ As one of my two research agendas involves improving the tools we use to study p
 
 Below you'll find a simple Python script for a convenient conversion of x-ray fluorescence geochemical analysis to atomic prop to set as input in Theriak-Domino. I've been written this code to save time on tasks that I find myself doing over and over again.
 
-[![PyWr Web](codes/images/button.png)](https://ltessergeo.github.io/web/pywr.html){:target="_blank" onclick="window.open(this.href, 'popup', 'width=990,height=1100'); return false;"}
+[![PyWr Web](codes/button.png)](https://ltessergeo.github.io/web/pywr.html){:target="_blank" onclick="window.open(this.href, 'popup', 'width=990,height=1100'); return false;"}
 
 
 ```r
