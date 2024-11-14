@@ -23,22 +23,10 @@
 
   <body>
     <h1>PyWR_TheriakD: A python script to convert whole rock analysis to input file in THERIAK-DOMINO</h1>
-
-    <!-- Input fields for Sample, Fe3prop, watermol, and apt values -->
-    <label for="sample">Sample Name:</label>
-    <input type="text" id="sample" value="sample"><br><br>
-
-    <label for="Fe3prop">Fe3+/Fe2+:</label>
-    <input type="number" id="Fe3prop" value="0.1" step="0.01"><br><br>
-
-    <label for="watermol">H2O content (mol%):</label>
-    <input type="number" id="watermol" value="10" step="1"><br><br>
-
-    <label for="apt">Do you want to correct for the presence of apatite? (yes/no):</label>
-    <input type="text" id="apt" value="yes"><br><br>
+  
 
     <!-- Editable table for dataset values -->
-    <h3>Input your composition</h3>
+    <h3>Input composition</h3>
     <table border="1">
       <tr>
         <th>Element</th>
@@ -58,7 +46,17 @@
      <!-- <tr><td>H2O</td><td><input type="number" id="H2O" value="0" step="0.10"></td></tr> -->
     </table>
     <br>
-
+    <h3>Set Parameter</h3>
+    <!-- Input fields for Sample, Fe3prop, watermol, and apt values -->
+    <label for="sample">Sample Name:</label>
+    <input type="text" id="sample" value="sample"><br><br>
+    <label for="Fe3prop">Fe3+/Fe2+:</label>
+    <input type="number" id="Fe3prop" value="0.1" step="0.01"><br><br>
+    <label for="watermol">H2O content (mol%):</label>
+    <input type="number" id="watermol" value="10" step="1"><br><br>
+    <label for="apt">Do you want to correct for the presence of apatite? (yes/no):</label>
+    <input type="text" id="apt" value="yes"><br><br>
+    
     <!-- Button to run the analysis -->
     <!--<button id="runScript">-->
       <button id="runScript" style="background-color: #3b3b3b; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 12px;">
