@@ -12,7 +12,7 @@
     <style>
         #output {
           font-weight: bold;
-          font-size: 10px;
+          font-size: 11px;
           color: rgb(255, 255, 255);
           background-color: #000000;
           padding: 10px;
@@ -39,16 +39,16 @@
 
     <!-- Editable table for dataset values -->
     <h3>Input your composition</h3>
-    <table border="2">
+    <table border="1">
       <tr>
         <th>Element</th>
-        <th>Value (wt%)</th>
+        <th>Value (Wt%)</th>
       </tr>
       <tr><td>SiO2</td><td><input type="number" id="SiO2" value="60.41" step="0.10"></td></tr>
       <tr><td>TiO2</td><td><input type="number" id="TiO2" value="0.93" step="0.01"></td></tr>
       <tr><td>Al2O3</td><td><input type="number" id="Al2O3" value="20.1" step="0.10"></td></tr>
-      <tr><td>Fe2O3</td><td><input type="number" id="Fe2O3" value="0" step="0.01"></td></tr>
-      <tr><td>FeO</td><td><input type="number" id="FeO" value="5.68" step="0.10"></td></tr>
+      <!--<tr><td>Fe2O3</td><td><input type="number" id="Fe2O3" value="5.68" step="0.01"></td></tr>-->
+      <tr><td>Fe2O3</td><td><input type="number" id="FeO" value="5.68" step="0.10"></td></tr>
       <tr><td>MnO</td><td><input type="number" id="MnO" value="0.08" step="0.01"></td></tr>
       <tr><td>MgO</td><td><input type="number" id="MgO" value="2.3" step="0.10"></td></tr>
       <tr><td>CaO</td><td><input type="number" id="CaO" value="1.06" step="0.10"></td></tr>
@@ -80,7 +80,7 @@
             # Get values from editable table to form the dataset DataFrame
             dataset = pd.DataFrame({
                 'SiO2': [float(Element("SiO2").value)], 'TiO2': [float(Element("TiO2").value)],
-                'Al2O3': [float(Element("Al2O3").value)], 'Fe2O3': [float(Element("Fe2O3").value)],
+                'Al2O3': [float(Element("Al2O3").value)], 'Fe2O3': [0],
                 'FeO': [float(Element("FeO").value)], 'MnO': [float(Element("MnO").value)],
                 'MgO': [float(Element("MgO").value)], 'CaO': [float(Element("CaO").value)],
                 'Na2O': [float(Element("Na2O").value)], 'K2O': [float(Element("K2O").value)],
@@ -137,9 +137,9 @@
             ds55 = "".join([f"{col}({CationsF3[col].iloc[0]:.3f})" for col in CationsF3.columns])
 
             result = (
-                f"0   {ds62}O(?)    * {sample} Fe3 = {Fe3prop} | H2O = {watermol} [ds62]\n"
-                f"0   {ds55}O(?)    * {sample} Fe3 = {Fe3prop} | H2O = {watermol} [ds55]\n"
-                
+                f"0   {ds62}O(?)   * {sample} Fe3 = {Fe3prop} | H2O = {watermol} [ds62]\n"
+                f"0   {ds55}O(?)   * {sample} Fe3 = {Fe3prop} | H2O = {watermol} [ds55]\n"
+                f"\n"
                 f"Composition in Mol%\n"
                 f"\n{MolPerc.T.to_string(header=False)}"
             )
