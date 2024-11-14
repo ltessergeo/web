@@ -28,30 +28,6 @@
     <!-- Editable table for dataset values -->
     <h3>Input composition</h3>
     <br>
-    <div style="display: flex; justify-content: space-between;">
-      <div>
-        <h3>Input composition</h3>
-        <table border="1">
-          <tr>
-            <th>Element</th>
-            <th>Value (Wt%)</th>
-          </tr>
-          <tr><td>SiO2</td><td><input type="number" id="SiO2" value="60.41" step="0.10"></td></tr>
-          <tr><td>TiO2</td><td><input type="number" id="TiO2" value="0.93" step="0.01"></td></tr>
-          <tr><td>Al2O3</td><td><input type="number" id="Al2O3" value="20.1" step="0.10"></td></tr>
-          <!--<tr><td>Fe2O3</td><td><input type="number" id="Fe2O3" value="5.68" step="0.01"></td></tr>-->
-          <tr><td>FeO</td><td><input type="number" id="FeO" value="5.68" step="0.10"></td></tr>
-          <tr><td>MnO</td><td><input type="number" id="MnO" value="0.08" step="0.01"></td></tr>
-          <tr><td>MgO</td><td><input type="number" id="MgO" value="2.3" step="0.10"></td></tr>
-          <tr><td>CaO</td><td><input type="number" id="CaO" value="1.06" step="0.10"></td></tr>
-          <tr><td>Na2O</td><td><input type="number" id="Na2O" value="1.53" step="0.10"></td></tr>
-          <tr><td>K2O</td><td><input type="number" id="K2O" value="4.17" step="0.10"></td></tr>
-          <tr><td>P2O5</td><td><input type="number" id="P2O5" value="0.15" step="0.10"></td></tr>
-         <!-- <tr><td>H2O</td><td><input type="number" id="H2O" value="0" step="0.10"></td></tr> -->
-        </table>
-      </div>
-
-    <br>
     <button id="pasteClipboard" style="background-color: #3b3b3b; border: none; color: white; padding: 10px 26px; text-align: center; text-decoration: none; display: inline-block; font-size: 11px; margin: 4px 2px; cursor: pointer; border-radius: 10px;">
       Paste from Clipboard
     </button>
@@ -80,6 +56,30 @@
         }
       });
     </script>
+    <br>
+    <div style="display: flex; justify-content: space-between;">
+      <div>
+        <h3>Input composition</h3>
+        <table border="1">
+          <tr>
+            <th>Element</th>
+            <th>Value (Wt%)</th>
+          </tr>
+          <tr><td>SiO2</td><td><input type="number" id="SiO2" value="60.41" step="0.10"></td></tr>
+          <tr><td>TiO2</td><td><input type="number" id="TiO2" value="0.93" step="0.01"></td></tr>
+          <tr><td>Al2O3</td><td><input type="number" id="Al2O3" value="20.1" step="0.10"></td></tr>
+          <!--<tr><td>Fe2O3</td><td><input type="number" id="Fe2O3" value="5.68" step="0.01"></td></tr>-->
+          <tr><td>FeO</td><td><input type="number" id="FeO" value="5.68" step="0.10"></td></tr>
+          <tr><td>MnO</td><td><input type="number" id="MnO" value="0.08" step="0.01"></td></tr>
+          <tr><td>MgO</td><td><input type="number" id="MgO" value="2.3" step="0.10"></td></tr>
+          <tr><td>CaO</td><td><input type="number" id="CaO" value="1.06" step="0.10"></td></tr>
+          <tr><td>Na2O</td><td><input type="number" id="Na2O" value="1.53" step="0.10"></td></tr>
+          <tr><td>K2O</td><td><input type="number" id="K2O" value="4.17" step="0.10"></td></tr>
+          <tr><td>P2O5</td><td><input type="number" id="P2O5" value="0.15" step="0.10"></td></tr>
+         <!-- <tr><td>H2O</td><td><input type="number" id="H2O" value="0" step="0.10"></td></tr> -->
+        </table>
+      </div>
+
       <div>
         <h3>Set Parameter</h3>
         <!-- Input fields for Sample, Fe3prop, watermol, and apt values -->
