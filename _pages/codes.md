@@ -12,18 +12,14 @@ header:
 
 # PyWR_TheriakD
 
-[![R build status](https://github.com/ShanaScogin/BayesPostEst/workflows/R-CMD-check/badge.svg)](https://github.com/ShanaScogin/BayesPostEst/actions)
+[![R build status](https://github.com/ltessergeo/web/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ltessergeo/web/actions)
 
 As one of my two research agendas involves improving the tools we use to study petrology, a good deal of my time is spent using isochemical sections to understand equilibrium vs desequilibrium in natural metamorphic samples. Sometimes is tedious and repetitive to convert bulk rock composition in order to set as input parameter in modelling programs.
 
 Below you'll find a simple Python script for a convenient conversion of x-ray fluorescence geochemical analysis to atomic prop to set as input in Theriak-Domino. I've been written this code to save time on tasks that I find myself doing over and over again.
 
-[Code](https://ltessergeo.github.io/web/pywr.html){:target="_blank" onclick="window.open(this.href, 'popup', 'width=990,height=1100'); return false;"}
+[![PyWr Web](https://github.com/ltessergeo/web/images/button.png)](https://ltessergeo.github.io/web/pywr.html){:target="_blank" onclick="window.open(this.href, 'popup', 'width=990,height=1100'); return false;"}
 
-
-{% include gallery %}
-
-To install the latest release on CRAN:
 
 ```r
 install.packages("BayesPostEst")
