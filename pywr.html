@@ -115,8 +115,17 @@
             TC = MolF * (1 - watermol / 100)
 
             CationsO2 = pd.DataFrame({
-                'SI': TC['SiO2'], 'TI': TC['TiO2'], 'AL': TC['Al2O3'] * 2, 'FE': TC['FeO'], 'MN': TC['MnO'],
-                'MG': TC['MgO'], 'CA': TC['CaO'], 'NA': TC['Na2O'], 'K': TC['K2O'] * 2, 'H': [watermol * 2], 'O': TC['O2']
+                'SI': TC['SiO2'], 
+                'TI': TC['TiO2'], 
+                'AL': TC['Al2O3'] * 2, 
+                'FE': TC['FeO'], 
+                'MN': TC['MnO'], 
+                'MG': TC['MgO'], 
+                'CA': TC['CaO'], 
+                'NA': TC['Na2O'], 
+                'K': TC['K2O'] * 2,
+                'H': [watermol * 2], 
+                'O': TC['O2']
             })
 
             CationsF3 = pd.DataFrame({
@@ -130,7 +139,7 @@
             result = (
                 f"0   {ds62}O(?)    * {sample} Fe3/Fe2 = {Fe3prop} | H2O= {watermol} [ds62]\n"
                 f"0   {ds55}O(?)    * {sample} Fe3/Fe2 = {Fe3prop} | H2O= {watermol} [ds55]\n"
-                f"    {CationsF3}"
+                f"\n{CationsF3.to_string(index=False)}"
             )
 
             Element("output").write(result)
