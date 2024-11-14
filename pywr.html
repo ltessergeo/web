@@ -139,8 +139,9 @@
             result = (
                 f"0   {ds62}O(?)    * {sample} Fe3 = {Fe3prop} | H2O = {watermol} [ds62]\n"
                 f"0   {ds55}O(?)    * {sample} Fe3 = {Fe3prop} | H2O = {watermol} [ds55]\n"
+                
                 f"Composition in Mol%\n"
-                f"\n{CationsF3.T.to_string(header=False)}"
+                f"\n{MolPerc.T.to_string(header=False)}"
             )
 
             Element("output").write(result)
